@@ -31,12 +31,23 @@
             });
             }
         </script>
+        <script src="js/three.min.js"></script>
+        <script src="js/panolens.min.js"></script>
+        <script>
+
+            const panorama = new PANOLENS.ImagePanorama( 'plats1.png' );
+            const viewer = new PANOLENS.Viewer();
+            viewer.add( panorama );
+            
+        </script>
     </head>
 
     <body>
        
         <div id='vrview'></div>
         <div id='vrview2'></div>
+
+        <iframe allowfullscreen src="examples/panorama_image.html"></iframe>
         
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
