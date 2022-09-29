@@ -1,3 +1,35 @@
-Hello World
+<!doctype html>
 
-Hejhej hemskt mycket hej
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Hej hopp</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+        <script>window.addEventListener('load', onVrViewLoad);
+
+        function onVrViewLoad() {
+        // Selector '#vrview' finds element with id 'vrview'.
+        var vrView = new VRView.Player('#vrview', {
+            image: 'https://video.360cities.net/atmosphaeres/01849996_ATM00841-Lofoten-Turquoise-Waves-Rolling-Onto-Arctic-Beach-RM-4-MD1-1024x512.jpg',
+            width: "700px",
+            height: "500px"
+
+        });
+        }
+        </script>
+    </head>
+
+    <body>
+       
+        <div id='vrview'></div>
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
