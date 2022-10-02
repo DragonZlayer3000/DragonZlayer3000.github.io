@@ -8,8 +8,10 @@
 
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
-        <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+        <script src="http://code.vostrel.cz/jquery.reel.js"></script>
+        <!-- <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
         <script>window.addEventListener('load', onVrViewLoad);
+        
 
         function onVrViewLoad() {
         // Selector '#vrview' finds element with id 'vrview'.
@@ -31,22 +33,19 @@
             });
             }
         </script>
-        <script src="js/three.min.js"></script>
-        <script src="js/panolens.min.js"></script>
-        <script>
-
-            const panorama = new PANOLENS.ImagePanorama( 'plats1.png' );
-            const viewer = new PANOLENS.Viewer();
-            viewer.add( panorama );
-            
-        </script>
+        <script src="js/three.min.js"></script> -->
     </head>
 
     <body>
        
         <div id='vrview'></div>
         <div id='vrview2'></div>
-        
+        <img src="/demo/green.jpg" width="168" height="126"
+        class="reel"
+        data-image="/demo/green-reel.jpg"
+        data-frames="32"
+        data-footage="4"
+        data-revolution="800">
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
         
